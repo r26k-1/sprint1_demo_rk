@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the InstaSummary,Preprocessing and Sentiment analysis Application</h1>
+    </header>
+
+    <section>
+        <h2>Upload Files</h2>
+        <p>Select a file to upload (CSV, Excel, TXT, or PDF).</p>
+        <form action="/upload/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv,.xlsx,.txt,.pdf" required>
+            <button type="submit">Upload File</button>
+        </form>
+    </section>
+
+    
+
+    
+        
+    </section>
+
+    <footer>
+        <p>Fast API Application  &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Results</h1>
+
+    {% if file_type == "dataframe" %}
+        <h2>Preprocessed Data</h2>
+        <div class="dataframe">
+            {{ dataframe | safe }}  <!-- Render the HTML table of the preprocessed DataFrame -->
+        </div>
+        <h2>DataFrame Information</h2>
+        <pre>{{ info }}</pre>   <!-- Display DataFrame info -->
+        <h2>DataFrame Description</h2>
+        <pre>{{ description }}</pre>  <!-- Display DataFrame description -->
+    {% else %}
+        <h2>Preprocessed Data</h2>
+        <p>{{ raw_text }}</p>
+    {% endif %}
+
+    <h2>Sentiment Analysis</h2>
+    {% if sentiment %}
+        <p>Sentiment: {{ sentiment }}</p>  <!-- Display sentiment analysis results -->
+    {% else %}
+        <p>No sentiment analysis available.</p>
+    {% endif %}
+
+    <h2>Summary</h2>
+    {% if summary %}
+        <p>Summary: {{ summary }}</p>  <!-- Display the text summary -->
+    {% else %}
+        <p>No summary available.</p>
+    {% endif %}
+
+    <section>
+        <h2>Actions</h2>
+        <a href="/">
+            <button>Back to Upload</button>
+        </a>
+    </section>
+</body>
+</html>

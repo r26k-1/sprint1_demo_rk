@@ -1,0 +1,128 @@
+/* Reset basic elements for consistent behavior across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* Centering the main header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling headers */
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Section styling */
+section {
+    background-color: rgb(16, 189, 160);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form styles with better spacing */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Styling input fields */
+input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling preformatted text */
+pre {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Display DataFrame output */
+.dataframe {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Link styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Message display styles */
+.message {
+    background-color: #e7f3fe;
+    color: #31708f;
+    padding: 15px;
+    border-left: 6px solid #bce8f1;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Error message styles */
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 15px;
+    border-left: 6px solid #ebccd1;
+    border-radius: 5px;
+    margin-top: 20px;
+}
